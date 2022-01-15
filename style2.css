@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+/* nav */
+.wrapper .nav nav{
+    background-color: #fff;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+   
+}
+.nav nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    box-shadow: 0 0 10px gray;
+    transition: background-color 0.3s ease;
+}
+
+.nav nav .menu ul{
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+.nav nav .menu ul li {
+    list-style: none;
+    margin: 0 20px 0 0;
+    font-weight: bold;
+}
+
+.nav nav .menu ul li a{
+    color: #444941;
+}
+
+.nav nav .menu ul li#drop:hover {
+    background-color: #444941;
+    color: white;
+    transition: 0.3s ease;
+    padding: px;
+    border-radius: 5px;
+}
+
+.nav nav .menu ul li a:hover {
+    background-color: #444941;
+    color: white;
+    transition: 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+.nav nav .logo img {
+    width: 40px;
+    margin: auto;
+}
+
+.nav nav .logo {
+    display: flex;
+}
+
+.nav nav .logo h3{
+    padding: 0 20px;
+    margin: auto;
+}
+/* akhir nav */
+
+/* jumbotron */
+.jumbotron {
+    width: 100%;
+    height: 100vh;
+}
+
+.jumbotron video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+.jumbotron .judul {
+    padding: 300px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron .judul p {
+    margin: 0 auto 20px;
+    width: 550px;
+}
+/* akhir jumbotron */
+
+/* choose */
+.choose ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin:0 0 50px 0;
+}
+
+.choose {
+    margin: 20px;
+}
+
+.choose ul li {
+    padding: 0 10px 0 10px;
+}
+
+.choose ul li a{
+    background-color: #666;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: white;
+}
+
+.choose ul li a:hover {
+    background-color: white;
+    color: #444941;
+    transition: 0.3s ease;
+    border: 1px solid #444941;
+}
+/* akhir choose */
+
+
+/* darkmode */
+.darkmode {
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+
+.darkmode button {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+
+.darkmode button.terang {
+    display: none;
+    background-color: #ddd;
+}
+
+.darkmode button.gelap {
+    background-color: #666;
+    color: white;
+}
+
+/* dark */
+.dark {
+    transition: 0.3s ease;
+}
+
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+.dark .container1 .contain1{
+    box-shadow: 0 0 10px white;
+}
+
+.dark .container2 .contain2{
+    box-shadow: 0 0 10px white;
+}
+
+.dark .nav nav{
+    background: black;
+    transition: 0.3s ease;
+}
+
+.dark .nav nav .menu ul li a{
+    color: white;
+    transition: 0.3s ease;
+}
+
+.dark .nav nav .menu ul li a:hover{
+    color: white;
+    background-color: #444941;
+}
+
+.dark .darkmode button.terang {
+    display: inline;
+}
+
+.dark .darkmode button.gelap {
+    display: none;
+}
+
+.dark .isi .isi-materi p#break a{
+    color: blue;
+}
+
+.dark .popup {
+    color: black;
+}
+/* akhir darkmode */
+
+.isi h1 {
+    text-align: center;
+}
+
+.isi h1::after {
+    content: "";
+    border-bottom: 5px solid blue;
+    width: 52px;
+    display: block;
+    margin: 10px auto 30px;
+}
+
+.isi .quote {
+    padding: 50px;
+    background-color: red;
+    text-align: center;
+    background: url(/gambar-pemandangan-pegunungan4.jpg);
+}
+
+.isi .quote p {
+    color: white;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.isi .isi-materi {
+    width: 900px;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+
+.isi-materi .container1 img {
+    width: 200px;
+    padding: 10px;
+}
+
+.isi-materi .container1 {
+    display: flex;
+    width: 700px;
+    box-shadow: 0 0 10px black;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.isi-materi .contain1 {
+    display: flex;
+}
+
+.isi-materi .contain1 .txt{
+    padding: 10px;
+    text-align: center;
+    margin: auto 0;
+}
+
+.isi-materi .container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.isi-materi .container2 img {
+    width: 200px;
+    padding: 10px;
+}
+
+.container2 .contain2 {
+    display: flex;
+    width: 700px;
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+}
+
+
+.container2 .contain2 .txt {
+    text-align: center;
+    margin: auto 0;
+}
+
+p#break {
+    
+    text-align: center;
+    margin: 50px 0 30px;
+    font-weight: bold;
+}
+
+p#break a{
+    color: rgb(1, 1, 42);
+}
+
+.penyusun {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.penyusun img {
+    width: 100px;
+}
+
+.isi .tombol {
+    text-align: right;
+    margin: 30px;
+}
+
+.isi .tombol button#quiz {
+    background-color: #444941;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.isi .tombol button#quiz:hover {
+    font-weight: bolder;
+    background-color: white;
+    color: #444941;
+    border: 1px solid #444941;
+    transition: 0.3s ease;
+}
+
+/* footer */
+.footer {
+    background-color: rgb(1, 1, 42);
+    text-align: center;
+    padding: 30px 0 30px;
+    color:white;
+}
+
+.footer .sosmed {
+    margin: 40px 0;
+}
+
+.footer .sosmed ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.footer .sosmed ul li a{
+    padding: 0 30px;
+}
+
+.footer img {
+    width: 40px;
+}
+
+.footer h4 {
+    padding: 25px 0 0;
+}
+/* akhir footer */
+
+/* popup */
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    display: none;
+    top: 0;
+}
+
+.popup .content {
+    text-align: left;
+    height: 250px;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    box-shadow: inset 0 0 10px blue;
+    margin: 200px auto ;
+}
+
+.popup .content a {
+    background-color: rgb(1, 1, 42);
+
+    box-shadow: 0 0 10px gray;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.popup .content a.btn :hover {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    transition: 0.3ms ease;
+}
+
+.popup .content img {
+    width: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+/* akhir popup */
