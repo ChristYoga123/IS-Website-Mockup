@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- popup -->
+<div class="popup">
+    <div class="content">
+        <img src="https://cdn-icons.flaticon.com/png/512/1008/premium/1008927.png?token=exp=1639281785~hmac=3449758bfe12afc67468ca864f16fead" class="close" alt="">
+        <h1>Daftar</h1>
+        <input type="text" placeholder="Username" required>
+        <input type="text" placeholder="E-mail" required>
+        <input type="text" placeholder="Password" required>
+        <a href="main.html" class="button">Daftar</a>
+    </div>
+</div>
+<!-- akhir popup -->
+
+<!-- nav -->
+<div class="wrapper">
+    <div class="nav">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/Logo iSyac.png" alt="">
+                </a>
+                <h3>ISyac</h3>
+            </div>
+    
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#fitur">Fitur</a></li>
+                    <li><a href="#materi">Materi</a></li>
+                    <li><a href="#tim">Tim</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- akhir nav -->
+
+<!-- jumbotron -->
+<div class="jumbotron">
+    <video src="/fixed.mp4" autoplay muted loop></video>
+    <div class="judul">
+        <h1>Teman Belajarmu</h1>
+        <p>Kembangkan skillmu dalam Sistem Informasi dan Coding</p>
+        <button id="button">Masuk</button>
+    </div>
+</div>
+<!-- akhir jumbotron -->
+
+<!-- darkmode -->
+<div class="darkmode">
+    <button class="terang" onclick="ubahMode()">Light Mode</button>
+    <button class="gelap" onclick="ubahMode()">Dark Mode</button>
+</div>
+<!-- akhir darkmode -->
+
+<!-- about -->
+<div class="about" id="tentang">
+    <h1>Tentang</h1>
+    <p><b><i>"Bebaskan dirimu dalam mengakses materi Sistem Informasi"</i></b></p>
+    <p id="buttom">Website ini menyediakan seluruh materi-materi yang ada di jurusan Sistem Informasi untuk mempersiapkan mahasiswa dalam dunia kerja</p>
+</div>
+<!-- akhir about -->
+
+<!-- fitur -->
+<div class="fitur" id="fitur">
+    <div class="container">
+        <div class="contain1">
+            <img src="https://cdn-icons-png.flaticon.com/512/1253/1253702.png" alt="">
+            <h2>Mudah Dipahami</h2>
+            <p>Materi yang disajikan menggunakan bahasa yang mudah dipahami bahkan bagi awam sekaligus</p>
+        </div>
+
+        <div class="contain2">
+            <img src="/hierarchical-structure.png" alt="">
+            <h2>Terstruktur</h2>
+            <p>Materi yang disajikan sudah disusun sedemikian rupa sehingga mahasiswa tidak perlu bingung harus memulai darimana</p>
+        </div>
+
+        <div class="contain3">
+            <img src="https://cdn-icons-png.flaticon.com/512/6315/6315397.png" alt="">
+            <h2>Novel</h2>
+            <p>Jika mahasiswa merasa jenuh, kami menyediakan novel untuk menghibur mahasiswa agar tetap semangat untuk belajar</p>
+        </div>
+    </div>
+</div>
+<!-- akhir fitur -->
+
+<!-- materi -->
+<div class="materi" id="materi">
+    <h1>Materi</h1>
+    <div class="container">
+        <div class="container1">
+            <div class="contain1">
+                <div class="img">
+                    <img src="/pom.jpg" alt="pom">
+                </div>
+                <hr>
+                <div class="txt">
+                    <h2>Prinsip Organisasi & Manajemen</h2>
+                    <p>Materi ini mempelajari tentang karakteristik yang harus dimiliki oleh seorang manager dalam memimpin sebuah organisasi atau perusahaan</p>
+                </div>
+            </div>
+            <div class="kosongan"></div>
+        </div>
+
+        <div class="container2">
+            <div class="kosongan"></div>
+            <div class="contain2">
+                <div class="txt">
+                    <h2>Dasar-Dasar Sistem Informasi</h2>
+                    <p>Materi ini mempelajari tentang cara pengembangan sebuah sistem yang berisikan informasi untuk membantu pembuatan keputusan yang bermanfaat bagi organisasi atau perusahaan</p>
+                </div>
+                <hr>
+                <div class="img">
+                    <img src="/ddsi.jpg" alt="pom">
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="contain1">
+                <div class="img">
+                    <img src="/coding.jpg" alt="pom">
+                </div>
+                <hr>
+                <div class="txt">
+                    <h2>Coding</h2>
+                    <p>Karena Sistem Informasi berkaitan dengan komputer, maka skill coding harus dikuasai terutama dalam hal pembuatan sistem. Bahasa yang dipakai ialah Python</p>
+                </div>
+            </div>
+            <div class="kosongan"></div>
+        </div>
+    </div>
+</div>
+<!-- akhir materi -->
+
+<!-- tim -->
+<div class="tim" id="tim">
+    <h1>Tim</h1>
+    <p><b><i>Para pengembang web</i></b></p>
+    <div class="img">
+        <div class="img1">
+            <img src="/reyhan.png" alt="">
+            <h2>Muhammad Reyhan Faiz Mahendra</h2>
+            <h3>(212410101003)</h3><br>
+            <p>Mahasiswa Sistem Informasi Universitas Jember 2021. Berperan sebagai desainer web</p>
+        </div>
+
+        <div class="img2">
+            <img src="/yoga.png" alt="yoga">
+            <h2>Christianus Yoga Wibisono</h2>
+            <h3>(212410101005)</h3><br>
+            <p>Mahasiswa Sistem Informasi Universitas Jember 2021. Berperan sebagai programmer web</p>
+        </div>
+    </div>
+</div>
+<!-- akhir tim -->
+
+<!-- latest -->
+<div class="latest">
+    <h1>Materi Terbaru</h1>
+    <a href=""></a>
+    <div class="late">
+        <h3><a href="">Coding (Tipe Data dan Variabel) </a></h3><br>
+        <div class="img">
+            <img src="data:image/jpeg;base64,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" alt="type">
+            <hr>
+            <p>Materi kali ini membahas tentang tipe data yang ada di Python dan juga cara menyimpan data ke dalam sebuah variabel.</p>
+        </div>
+    </div>
+</div>
+<!-- akhir latest -->
+
+<!-- footer -->
+<div class="footer" id="kontak">
+    <h1>Kontak</h1>
+    <p><b><i>Silahkan hubungi kami</i></b></p>
+    <div class="sosmed">
+        <ul>
+            <li><a href=""><img src="/youtube.png" alt=""></a></li>
+            <li><a href=""><img src="/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="/instagram.png" alt=""></a></li>
+        </ul>
+    </div>
+    <hr>
+    <h4>ISyac Corporation</h4>
+</div>
+<!-- akhir footer -->
+
+<script>
+    document.getElementById("button").addEventListener("click", function(){
+        document.querySelector(".popup").style.display = "flex";
+    })
+
+    document.querySelector(".close").addEventListener("click", function(){
+        document.querySelector(".popup").style.display = "none"
+    })
+</script>
+<script src="js_landing.js"></script>
+</body>
+</html>
