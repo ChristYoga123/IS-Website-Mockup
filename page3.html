@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+<body>
+    <!-- nav -->
+    <div class="wrapper">
+    <div class="nav">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/Logo iSyac.png" alt="">
+                </a>
+                <h3>ISyac</h3>
+            </div>
+            
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#tentang">Tentang</a>    </li>
+                    <li><a href="index.html#fitur">Fitur</a></li>
+                    <li><a href="index.html#materi">Materi</a></li>
+                    <li><a href="#tim">Tim</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- akhir nav -->
+
+<!-- jumbotron -->
+<div class="jumbotron">
+    <video src="/FinalVideo_1639327896.821003.MOV" autoplay muted loop></video>
+    <div class="judul">
+        <h1>Coding</h1>
+        <p>Karena Sistem Informasi berkaitan dengan komputer, maka diperlukan skill coding yang dapat mendukung pembuatan sistem</p>
+    </div>
+</div>
+<!-- akhir jumbotron -->
+
+
+<!-- darkmode -->
+<div class="darkmode">
+    <button class="terang" onclick="ubahMode()">Light Mode</button>
+    <button class="gelap" onclick="ubahMode()">Dark Mode</button>
+</div>
+<!-- akhir darkmode -->
+
+<!-- choose -->
+<div class="choose">
+    <ul>
+        <li><a href="main.html">POM</a></li>
+        <li><a href="main3.html">DDSI</a></li>
+        <li><a href="main2.html">Coding</a></li>
+    </ul>
+</div>
+<!-- akhir choose -->
+
+<!-- isi -->
+<div class="isi">
+    <h1>Pengantar Coding</h1>
+    <div class="quote">
+        <p><b><i>"Coding is today's language of creativity. All our children deserve a chance to become creators instead customers of computer science"</i></b></p>
+    </div>
+    <div class="isi-materi">
+        <p>Industri TI berkembang pesat dengan aplikasi kecerdasan buatan, pembelajaran mesin, dan ilmu data. Dengan aplikasi zaman baru, permintaan untuk a juga meningkat. Kemudahan akses dan keterbacaan menjadikan python sebagai salah satu bahasa pemrograman terpopuler saat ini. Sekarang saatnya untuk beralih ke python dan melepaskan kemungkinan tak terbatas yang hadir dengan pemrograman python. Artikel Pengenalan python ini akan memandu Anda dengan dasar-dasar dan konsep dasar dalam pemrograman python.</p><br>
+
+        <p>Python adalah bahasa pemrograman tujuan umum. Sangat mudah dipelajari, sintaksis yang mudah dan keterbacaan adalah salah satu alasan mengapa developer beralih ke python dari bahasa pemrograman lain.</p><br>
+
+        <p>Python adalah bahasa pemrograman tujuan umum. Sangat mudah dipelajari, sintaksis yang mudah dan keterbacaan adalah salah satu alasan mengapa developer beralih ke python dari bahasa pemrograman lain.</p><br>
+
+        <p>Python adalah bahasa pemrograman tujuan umum. Sangat mudah dipelajari, sintaksis yang mudah dan keterbacaan adalah salah satu alasan mengapa developer beralih ke python dari bahasa pemrograman lain.</p><br>
+        <p>Itu dibuat pada tahun 1991 oleh Guido Van Rossum. Asal usul namanya terinspirasi dari serial komedi berjudul 'Monty python'.</p><br>
+        <p>Untuk bekerja dengan bahasa pemrograman apa pun, Anda harus terbiasa dengan IDE. Anda dapat menemukan pengaturan untuk IDE untuk python, di 'python.org' dan menginstalnya di sistem Anda. Instalasi tampaknya mudah dan dilengkapi dengan IDLE untuk menulis program python.</p><br>
+        <p>Setelah Anda menginstal python di sistem Anda, Anda siap untuk menulis program dalam bahasa pemrograman python.</p><br>
+        <div class="img">
+            <img src="/maxresdefault.jpg" alt="">
+        </div>
+        <div class="tombol">
+            <button id="quiz">Next Question ---></button>
+        </div>
+
+    </div>
+    
+
+</div>
+<!-- akhir isi -->
+
+<!-- footer -->
+<!-- footer -->
+<div class="footer" id="kontak">
+    <h1>Kontak</h1>
+    <p><b><i>Silahkan hubungi kami</i></b></p>
+    <div class="sosmed">
+        <ul>
+            <li><a href=""><img src="/youtube.png" alt=""></a></li>
+            <li><a href=""><img src="/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="/instagram.png" alt=""></a></li>
+        </ul>
+    </div>
+    <hr>
+    <h4>ISyac Corporation</h4>
+</div>
+<!-- akhir footer -->
+
+<!-- popup -->
+<div class="popup">
+    <div class="content">
+        <img src="https://cdn-icons.flaticon.com/png/512/1008/premium/1008927.png?token=exp=1639281785~hmac=3449758bfe12afc67468ca864f16fead" class="close" alt="">
+        <h2>QUIZ</h2>
+        <p>Siapakah pencipta Python dan apa fungsi Python sendiri?</p>
+        <input type="radio" id="True"> Guido Van Rossum<br>
+        <input type="radio"> Mark Zuckerberg <br>
+        <input type="radio"> Stephen Hawking <br>
+        <input type="radio"> Bill Gates <br>
+        <a href="main2.html" class="btn">Submit</a>
+    </div>
+</div>
+<!-- akhir popup -->
+<script>
+    document.getElementById("quiz").addEventListener("click", function(){
+        document.querySelector(".popup").style.display = "flex"
+    })
+
+    document.querySelector(".close").addEventListener("click", function(){
+        document.querySelector(".popup").style.display = "none"
+    })
+</script>
+<script src="main.js"></script>
+</body>
+</html>
