@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: background-color 0.3s ease;
+}
+
+/* nav */
+.wrapper .nav nav{
+    background-color: #fff;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+   
+}
+.nav nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    box-shadow: 0 0 10px gray;
+    transition: background-color 0.3s ease;
+}
+
+.nav nav .menu ul{
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+.nav nav .menu ul li {
+    list-style: none;
+    margin: 0 20px 0 0;
+    font-weight: bold;
+}
+
+.nav nav .menu ul li a{
+    color: #444941;
+}
+
+.nav nav .menu ul li a:hover {
+    background-color: #444941;
+    color: white;
+    transition: 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav nav .logo img {
+    width: 40px;
+    margin: auto;
+}
+
+.nav nav .logo {
+    display: flex;
+}
+
+.nav nav .logo h3{
+    padding: 0 20px;
+    margin: auto;
+}
+/* akhir nav */
+
+/* jumbotron */
+.jumbotron {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.jumbotron video {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.jumbotron .judul {
+    padding: 300px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron .judul p {
+    margin-bottom: 20px;
+}
+
+.jumbotron button {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    outline: 1px solid white;
+    background-color: #444941;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.jumbotron button:hover {
+    transition: 0.3s ease;
+    background-color: white;
+    border: 1px solid blue;
+    color: blue;
+}
+/* akhir jumbotron */
+
+/* darkmode */
+.darkmode {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.darkmode button {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+
+.darkmode button.terang {
+    display: none;
+    background-color: #ddd;
+}
+
+.darkmode button.gelap {
+    background-color: #666;
+    color: white;
+}
+
+/* dark */
+.dark {
+    transition: 0.3s ease;
+}
+
+body.dark {
+    background-color: #000000;
+    color: white;
+}
+
+.dark video {
+    box-shadow: 0 0 10px gray;
+}
+
+.dark .wrapper .nav nav{
+    background: black;
+    transition: 0.3s ease;
+}
+
+.dark .wrapper .nav nav .menu ul li a{
+    color: white;
+    transition: 0.3s ease;
+}
+
+.dark .wrapper .nav nav .menu ul li a:hover{
+    color: white;
+    background-color: #444941;
+
+}
+
+.dark .darkmode button.terang {
+    display: inline;
+}
+
+.dark .darkmode button.gelap {
+    display: none;
+}
+
+.dark .fitur .container{
+    background-color: #333;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.dark .latest {
+    background-color: #333;
+    transition: 0.3s ease;
+}
+
+.dark .latest h1 {
+    color: white;
+    transition: 0.3s ease;
+}
+
+.dark .latest .late {
+    background-color: gray;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.dark .latest .late a{
+    color: white;
+    transition: 0.3s ease;
+}
+
+.dark .materi .container .contain1 {
+    box-shadow: 0 0 10px white;
+    transition: 0.3ms ease;
+}
+
+.dark .materi .container .contain2 {
+    box-shadow: 0 0 10px white;
+    transition: 0.3ms ease;
+}
+
+.dark .popup {
+    color: black;
+}
+/* akhir darkmode */
+
+/* about */
+.about {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about h1::after {
+    content: "";
+    border-bottom: 5px solid blue;
+    width: 52px;
+    display: block;
+    margin: 10px auto 30px;
+}
+
+.about p b i {
+    color: gray;
+}
+
+.about p#buttom {
+    width: 700px;
+    margin: 0 auto;
+}
+/* akhir about */
+
+/* fitur */
+.fitur .container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #f5f6f6;
+    margin: 30px 0 0;
+    padding: 30px;
+}
+
+.fitur .container img {
+    width: 70px;
+}
+
+.fitur .container p {
+    width: 350px;
+}
+/* akhir fitur */
+
+/* materi */
+.materi h1::after {
+    content: "";
+    border-bottom: 5px solid blue;
+    width: 52px;
+    display: block;
+    margin: 10px auto 30px;
+}
+.materi h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.materi .container img {
+    width: 200px;
+    padding: 10px;
+}
+
+.materi .container .txt {
+    text-align: justify;
+}
+
+.materi .container .container2 .contain2 h2{
+    text-align: right;
+}
+
+.materi .container .container1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.materi .container .contain1 {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+}
+
+.materi .container .container2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.materi .container .contain2 {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+}
+/* akhir materi */
+
+/* tim */
+.tim {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.tim h1::after {
+    content: "";
+    border-bottom: 5px solid blue;
+    width: 52px;
+    display: block;
+    margin: 10px auto 30px;
+}
+
+.tim .img {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0 0;
+}
+
+.tim img {
+    width: 300px;
+}
+
+.tim .img .img1 {
+    width: 300px;
+}
+
+.tim .img .img2 {
+    width: 300px;
+}
+/* akhir tim */
+
+/* latest */
+.latest h1::after {
+    content: "";
+    border-bottom: 5px solid blue;
+    width: 52px;
+    display: block;
+    margin: 10px auto 30px;
+}
+
+.latest {
+    background-color: #f5f6f6;
+    text-align: center;
+}
+
+.latest {
+    padding: 40px 0;
+}
+
+.latest .late {
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px #000000;
+}
+
+.latest h1 {
+    margin-bottom: 20px;
+}
+
+.latest .late .img {
+    display: flex;
+    text-align: center;
+}
+
+.latest .late .img img {
+    width: 150px;
+    padding: 20px;
+}
+/* akhir latest */
+
+/* footer */
+.footer {
+    background-color: rgb(1, 1, 42);
+    text-align: center;
+    padding: 30px 0 30px;
+    color:white;
+}
+
+.footer .sosmed {
+    margin: 40px 0;
+}
+
+.footer .sosmed ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.footer .sosmed ul li a{
+    padding: 0 30px;
+}
+
+.footer img {
+    width: 40px;
+}
+
+.footer h4 {
+    padding: 25px 0 0;
+}
+/* akhir footer */
+
+/* popup */
+.popup {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup .content {
+    text-align: center;
+    height: 250px;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    box-shadow: inset 0 0 10px blue;
+}
+
+.popup .content img.close {
+    width: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+.popup .content input {
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 3px;
+    border: 1px solid gray;
+}
+
+.popup .content a.button {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.popup .content a.button:hover {
+    background-color: white;
+    color: blue;
+    outline: 1px solid blue;
+    transition: 0.3s ease-in;
+}
+/* akhir popup */
